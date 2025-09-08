@@ -495,7 +495,7 @@
         <div class="container header-content">
             <h1 class="header-title">AutoHR-Digital innovators are disrupting industries and winning the competitive race</h1>
             <p class="header-subtitle">Connect your strategy to technology and experience exponential growth</p>
-            <a href="#" class="cta-button">Start Now</a>
+            <a href="ContactUS.html" class="cta-button">Contact US</a>
         </div>
     </header>
     
@@ -521,9 +521,7 @@
                             <p>To access technology adoption needs and implement required technology.</p>
                         </li>
                     </ul>
-                    
-                    <a href="#" class="cta-button" style="background: var(--primary); color: white; margin-top: 20px;">Get Started Now</a>
-                </div>
+                    </div>
                 
                 <div>
                     <div class="insight-card">
@@ -635,7 +633,7 @@
             <div class="stat-number">70%</div>
             <div class="stat-text">of companies have a digital transformation strategy or are working on one. (IDC, 2018)</div>
             <p>Make the move today, digital transformation is no longer a luxury but a necessity for businesses that want to remain competitive and thrive in this digital age.</p>
-            <a href="#" class="cta-button" style="background: white; color: var(--primary); margin-top: 30px;">Join the Digital Revolution</a>
+            <a href="DigitalRevolution.html" class="cta-button" style="background: white; color: var(--primary); margin-top: 30px;">Join the Digital Revolution</a>
         </div>
     </section>
     
@@ -714,6 +712,8 @@
                     <h3>Popular Tags</h3>
                     <div class="footer-tags">
                         <span class="tag">Azure</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Google</span>
                         <span class="tag">Microsoft 365</span>
                         <span class="tag">Digital Transformation</span>
                         <span class="tag">Cloud</span>
@@ -764,8 +764,8 @@
                 }
             });
             
-            // CTA buttons
-            const ctaButtons = document.querySelectorAll('.cta-button');
+            // CTA buttons (excluding the ones that should navigate to actual pages)
+            const ctaButtons = document.querySelectorAll('.cta-button:not([href="ContactUS.html"]):not([href="DigitalRevolution.html"])');
             ctaButtons.forEach(button => {
                 button.addEventListener('click', function(e) {
                     e.preventDefault();
